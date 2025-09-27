@@ -73,7 +73,7 @@ def plot_multiplot_and_export(ghana_table, cote_dIvoire_table):
 
     #scatter plot multiplot and export
     fig, ax = plt.subplots(1,2,figsize=(16,6))
-    fig.suptitle("Cote dIvoire and Ghana scatter plot Cocoa yield.", color="purple")
+    fig.suptitle("Cote dIvoire and Ghana scatter plot Cocoa yield.", color="purple",fontsize=20,fontweight="bold")
     ax[0].scatter(ghana.index, ghana["Yield"])
     ax[0].set_title("Ghana scatter plot Cocoa yield.")
     ax[0].set_xlabel("Year")
@@ -89,7 +89,7 @@ def plot_multiplot_and_export(ghana_table, cote_dIvoire_table):
 
     #bar chart multiplot and export
     fig, ax = plt.subplots(1,2, figsize=(16,6))
-    fig.suptitle("Cote dIvoire and Ghana multiplot bar chart Cocoa yield.", color="green")
+    fig.suptitle("Cote dIvoire and Ghana multiplot bar chart Cocoa yield.", color="green",fontsize=20,fontweight="bold")
     ax[0].bar(ghana.index, ghana["Area harvested"])
     ax[0].set_title("Ghana bar chart Cocoa yield.")
     ax[0].set_xlabel("Year")
@@ -105,7 +105,7 @@ def plot_multiplot_and_export(ghana_table, cote_dIvoire_table):
 
     # 4 panels in single plot
     fig, ax = plt.subplots(1,4, figsize=(20, 8))
-    fig.suptitle("Ghana and Cote dIvoire multiplot bar chart and scatter plot Cocoa yield.", color="blue")
+    fig.suptitle("Ghana and Cote dIvoire multiplot bar chart and scatter plot Cocoa yield.", color="blue",fontsize=20,fontweight="bold")
     ax[0].bar(ghana.index, ghana["Area harvested"])
     ax[0].set_title("Ghana bar chart Cocoa yield.")
     ax[0].set_xlabel("Year")
